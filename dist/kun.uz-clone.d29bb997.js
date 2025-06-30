@@ -667,6 +667,55 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 }
 
 },{}],"kyksZ":[function(require,module,exports,__globalThis) {
+var _api = require("./API");
+const request = async (url)=>{
+    const response = await fetch((0, _api.BASE_url), {
+        headers: {
+            'X-Api-Key': (0, _api.API_key)
+        }
+    });
+    const data = await response.json();
+    console.log(data);
+};
+request((0, _api.BASE_url));
+
+},{"./API":"bvGHb"}],"bvGHb":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "API_key", ()=>API_key);
+parcelHelpers.export(exports, "BASE_url", ()=>BASE_url);
+const API_key = '785ebe340000475e982b6739f0220b3b';
+const BASE_url = 'https://newsapi.org/v2';
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, '__esModule', {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === 'default' || key === '__esModule' || Object.prototype.hasOwnProperty.call(dest, key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
 
 },{}]},["7SvX3","kyksZ"], "kyksZ", "parcelRequire3092", {})
 
