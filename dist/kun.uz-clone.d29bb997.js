@@ -675,7 +675,7 @@ const request = async (url)=>{
         }
     });
     const data = await response.json();
-    console.log(data);
+    console.log(data.articles);
 };
 request((0, _api.BASE_url));
 
@@ -685,7 +685,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API_key", ()=>API_key);
 parcelHelpers.export(exports, "BASE_url", ()=>BASE_url);
 const API_key = '785ebe340000475e982b6739f0220b3b';
-const BASE_url = 'https://newsapi.org/v2';
+const BASE_url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${API_key}`;
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}],"jnFvT":[function(require,module,exports,__globalThis) {
 exports.interopDefault = function(a) {

@@ -5,7 +5,7 @@ const request=async (url)=>{
         headers:{'X-Api-Key':API_key}
     })
     const data=await response.json()
-    console.log(data);
+    console.log(data.articles);
     
 }
 request(BASE_url)
