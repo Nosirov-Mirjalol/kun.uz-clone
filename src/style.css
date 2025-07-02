@@ -438,7 +438,10 @@ div div{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr);
+    padding: 10px 13px;
     gap: 10px;
+    border-left: 7px solid #4d619e;
+    background-image: linear-gradient(#f8f0e2, #d6d3d1);
 }
     
 .div10 {

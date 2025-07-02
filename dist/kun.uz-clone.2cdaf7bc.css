@@ -514,9 +514,12 @@ div div {
 }
 
 .parent3 {
+  background-image: linear-gradient(#f8f0e2, #d6d3d1);
+  border-left: 7px solid #4d619e;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(7, 1fr);
   gap: 10px;
+  padding: 10px 13px;
   display: grid;
 }
 
