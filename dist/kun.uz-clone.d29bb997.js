@@ -845,6 +845,15 @@ const request = async ()=>{
           <hr />
         `;
     });
+    await data.articles.slice(2, 3).forEach((item)=>{
+        div12.innerHTML = `
+          <div class="devcha">
+          <img src=${item.urlToImage} alt="medium" />
+          <h2>${item.title}</h2>
+          <p>${item.description}</p>
+          </div>
+        `;
+    });
     console.log(data.articles);
 };
 request();
