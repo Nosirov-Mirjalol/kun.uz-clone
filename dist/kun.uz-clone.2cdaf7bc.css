@@ -533,6 +533,7 @@ div div {
 
 .div12 {
   grid-area: span 5 / 6 / span 5 / span 2;
+  padding: 5px 10px;
 }
 
 .divcha, .divcha img {
@@ -574,6 +575,18 @@ div div {
 }
 
 .devcha h2 {
-  padding: 3px 15px;
+  padding: 3px 35px;
+}
+
+.devcha p {
+  color: gray;
+  padding: 3px 35px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.divcha:hover h2, #div2:hover h5, .devcha:hover h2 {
+  color: #00349c;
+  transition: all .3s;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

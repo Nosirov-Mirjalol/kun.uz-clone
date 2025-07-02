@@ -459,6 +459,7 @@ div div{
     grid-column: span 2 / span 2;
     grid-row: span 5 / span 5;
     grid-column-start: 6;
+    padding: 5px 10px;
 }
 .divcha{
     width: 100%;
@@ -494,5 +495,14 @@ div div{
     color: #0104ba;
 }
 .devcha h2{
-    padding: 3px 15px;
+    padding: 3px 35px;
 }
+.devcha p{
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+    padding: 3px 35px;
+}
+.divcha:hover h2{color: #00349c; transition: all 0.3s;}
+#div2:hover h5{color: #00349c; transition: all 0.3s;}
+.devcha:hover h2{color: #00349c; transition: all 0.3s;}
