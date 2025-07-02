@@ -433,8 +433,12 @@ div {
   color: #00349c;
 }
 
+#intervyu div:hover h3 {
+  color: #316bdd;
+}
+
 #intervyu {
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
   gap: 10px;
   width: 100%;
@@ -442,9 +446,13 @@ div {
   display: flex;
 }
 
+#intervyu h3 {
+  height: 100px;
+}
+
 #intervyu div {
   color: #fff;
-  width: 300px;
+  width: 320px;
 }
 
 .inter img {
@@ -457,5 +465,10 @@ div {
 .inter {
   background-color: #232323;
   width: 100%;
+}
+
+#intervyu p, #intervyu i {
+  color: #898989;
+  display: inline;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

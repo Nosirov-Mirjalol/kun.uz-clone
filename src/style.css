@@ -360,20 +360,23 @@ gap: 5px;
 }
 #news p{
     color: gray;
-
 }
 #news div:hover h3{color: #00349c;}
+#intervyu div:hover h3{color: #316bdd;}
 
 #intervyu{
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
     gap: 10px;
     padding: 15px;
 }
+#intervyu h3{
+    height: 100px;
+}
 #intervyu div{
-    width: 300px;
+    width: 320px;
     color: white;
 }
 .inter img{
@@ -385,4 +388,12 @@ gap: 5px;
 .inter{
     width: 100%;
     background-color: #232323;
+}
+#intervyu p{
+    color: rgb(137, 137, 137);
+    display: inline;
+}
+#intervyu i{
+    display: inline;
+    color: rgb(137, 137, 137);
 }

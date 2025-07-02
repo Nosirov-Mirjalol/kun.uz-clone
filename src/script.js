@@ -135,6 +135,8 @@ const request=async ()=>{
           <div>
             <img src=${item.urlToImage} alt='img' />
             <h3>${item.title.slice(0,100)}</h3>
+            <i class="ri-play-circle-line"></i>
+            <p>Jahon</p>
           </div>
         `
     })
