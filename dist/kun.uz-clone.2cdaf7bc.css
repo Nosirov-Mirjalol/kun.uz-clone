@@ -666,6 +666,15 @@ footer img {
 }
 
 .teg i {
-  font-size: 20px;
+  font-size: 24px;
+}
+
+.tag i:hover {
+  color: #00349c;
+}
+
+.div:hover {
+  transition: all .3s;
+  transform: translate(-20px);
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */
