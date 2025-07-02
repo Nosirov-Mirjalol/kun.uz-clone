@@ -397,3 +397,14 @@ gap: 5px;
     display: inline;
     color: rgb(137, 137, 137);
 }
+#simleCard{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+#simleCard img{
+    width: 200px;
+}

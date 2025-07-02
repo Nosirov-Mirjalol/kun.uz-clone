@@ -471,4 +471,17 @@ div {
   color: #898989;
   display: inline;
 }
+
+#simleCard {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+#simleCard img {
+  width: 200px;
+}
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

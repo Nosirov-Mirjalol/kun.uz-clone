@@ -10,6 +10,7 @@ const div3=document.getElementById('div3')
 const div4=document.getElementById('div4')
 const div5=document.getElementById('div5')
 const div6=document.getElementById('div6')
+const card=document.getElementById('simleCard')
 const div7=document.getElementById('div7')
 const item1=document.getElementById('item1')
 const item2=document.getElementById('item2')
@@ -137,6 +138,14 @@ const request=async ()=>{
             <h3>${item.title.slice(0,100)}</h3>
             <i class="ri-play-circle-line"></i>
             <p>Jahon</p>
+          </div>
+        `
+    })
+    await data.articles.slice(13,16).forEach(item=>{
+        card.innerHTML +=`
+          <div>
+            <img src=${item.urlToImage} alt='img />
+            <h3>${item.title.slice(0,120)}</h3>
           </div>
         `
     })
