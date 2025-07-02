@@ -11,6 +11,7 @@ h3 {
 
 body {
   background: linear-gradient(#d9d9d9 5%, #fff 40% 60%) no-repeat;
+  margin: 0;
   font-family: Arial, sans-serif;
 }
 
@@ -433,6 +434,23 @@ div {
 }
 
 #intervyu {
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  display: flex;
+}
+
+#intervyu div {
+  width: 300px;
+}
+
+.inter img {
+  width: 100%;
+}
+
+.inter {
+  background-color: #232323;
   width: 100%;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */
