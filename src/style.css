@@ -506,3 +506,46 @@ div div{
 .divcha:hover h2{color: #00349c; transition: all 0.3s;}
 #div2:hover h5{color: #00349c; transition: all 0.3s;}
 .devcha:hover h2{color: #00349c; transition: all 0.3s;}
+
+footer .div {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid black;
+  padding: 0 5px;
+}
+footer .div div {
+  display: block;
+  cursor: pointer;
+}
+footer .div div p {
+  margin: 0;
+  font-size: 0.7rem;
+}
+footer i {
+  padding: 10px;
+  cursor: pointer;
+}
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+}
+footer ul li {
+  margin-top: 0.4rem;
+  margin-bottom: 0;
+  cursor: pointer;
+  color: rgb(82, 82, 82);
+  font-weight: 600;
+}
+footer li:hover{color: #0104ba; transition: all 0.3s;}
+footer img {
+  cursor: pointer;
+}
+
+.gazeta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

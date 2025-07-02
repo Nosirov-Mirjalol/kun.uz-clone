@@ -589,4 +589,57 @@ div div {
   color: #00349c;
   transition: all .3s;
 }
+
+footer .div {
+  border: 2px solid #000;
+  border-radius: 10px;
+  align-items: center;
+  padding: 0 5px;
+  display: flex;
+}
+
+footer .div div {
+  cursor: pointer;
+  display: block;
+}
+
+footer .div div p {
+  margin: 0;
+  font-size: .7rem;
+}
+
+footer i {
+  cursor: pointer;
+  padding: 10px;
+}
+
+footer ul {
+  align-items: center;
+  gap: 20px;
+  list-style-type: none;
+  display: flex;
+}
+
+footer ul li {
+  cursor: pointer;
+  color: #525252;
+  margin-top: .4rem;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+footer li:hover {
+  color: #0104ba;
+  transition: all .3s;
+}
+
+footer img {
+  cursor: pointer;
+}
+
+.gazeta {
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */
