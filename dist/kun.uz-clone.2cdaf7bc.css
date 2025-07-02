@@ -558,4 +558,18 @@ div div {
   align-items: center;
   display: flex;
 }
+
+.div11 h5 {
+  display: block;
+}
+
+.div11 p {
+  color: gray;
+  font-size: 14px;
+  display: inline;
+}
+
+.div11 i {
+  color: #0104ba;
+}
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

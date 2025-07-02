@@ -167,10 +167,9 @@ const request=async ()=>{
             <img src=${item.urlToImage} alt="medium" />
             <div>
               <i class="ri-play-circle-line"></i>
-              <p></p>
+              <p>Jamiyat</p>
               <h5>${item.title.slice(0,100)}</h5>
             </div>
-            
           </div>
           <hr />
         `

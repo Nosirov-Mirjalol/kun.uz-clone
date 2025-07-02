@@ -482,3 +482,14 @@ div div{
     justify-content: center;
     align-items: center;
 }
+.div11 h5{
+    display: block;
+}
+.div11 p{
+    display: inline;
+    font-size: 14px;
+    color: gray;
+}
+.div11 i{
+    color: #0104ba;
+}
