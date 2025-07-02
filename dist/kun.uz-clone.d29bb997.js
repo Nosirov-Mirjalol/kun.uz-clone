@@ -742,12 +742,12 @@ const request = async ()=>{
         </div>
         `;
     });
-    await data.articles.slice(7, 10).forEach((item)=>{
-        div6.innerHTML = `
+    await data.articles.slice(10, 13).forEach((item)=>{
+        div6.innerHTML += `
         <div class="div61">
-            <img src=${item.urlToImage} alt="medium" />
+            <img src=${item.urlToImage}/>
             <p>17:56 / 21.09.2024</p>
-            <h4>${item.title}</h4>
+            <h4>${item.title.slice(0, 100)}</h4>
         </div>
         `;
     });

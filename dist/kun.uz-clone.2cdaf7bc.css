@@ -298,6 +298,7 @@ div {
   grid-row-gap: 0px;
   grid-template-rows: repeat(5, 1fr);
   grid-template-columns: repeat(8, 1fr);
+  gap: 5px;
   display: grid;
 }
 
@@ -332,5 +333,14 @@ div {
 
 .div51 .p {
   font-weight: 500;
+}
+
+.div61 img {
+  width: 100%;
+}
+
+.div61 p {
+  color: gray;
+  font-weight: 600;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */
