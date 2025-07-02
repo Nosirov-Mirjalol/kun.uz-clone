@@ -832,6 +832,20 @@ const request = async ()=>{
           </div>
         `;
     });
+    await data.articles.slice(3, 6).forEach((item)=>{
+        div11.innerHTML += `
+          <div id="div2">
+            <img src=${item.urlToImage} alt="medium" />
+            <div>
+              <i class="ri-play-circle-line"></i>
+              <p></p>
+              <h5>${item.title.slice(0, 100)}</h5>
+            </div>
+            
+          </div>
+          <hr />
+        `;
+    });
     console.log(data.articles);
 };
 request();

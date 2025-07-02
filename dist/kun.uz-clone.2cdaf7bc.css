@@ -543,4 +543,19 @@ div div {
   color: gray;
   font-weight: 600;
 }
+
+.div12 img {
+  width: 100%;
+}
+
+.div11 img {
+  width: 200px;
+  padding-right: 15px;
+}
+
+.div11 #div2 {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

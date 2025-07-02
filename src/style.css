@@ -471,3 +471,14 @@ div div{
     font-weight: 600;
     color: gray;
 }
+.div12 img{
+    width: 100%;
+}
+.div11 img{
+    width: 200px;
+    padding-right: 15px;
+}.div11 #div2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
