@@ -283,4 +283,10 @@ gap: 5px;
 .div61 p{
     color: gray;
     font-weight: 600;
+    font-size: 14px;
 }
+.div71 img{
+    width: 100%;
+}
+.div71:hover h4{color: #00349c;}
+.div61:hover h4{color: #00349c;}

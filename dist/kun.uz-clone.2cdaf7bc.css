@@ -341,6 +341,15 @@ div {
 
 .div61 p {
   color: gray;
+  font-size: 14px;
   font-weight: 600;
+}
+
+.div71 img {
+  width: 100%;
+}
+
+.div71:hover h4, .div61:hover h4 {
+  color: #00349c;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

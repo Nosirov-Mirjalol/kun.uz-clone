@@ -751,6 +751,15 @@ const request = async ()=>{
         </div>
         `;
     });
+    await data.articles.slice(14, 16).forEach((item)=>{
+        div7.innerHTML += `
+        <div class="div71">
+            <img src=${item.urlToImage} alt="medium" />
+            <p>Jahon | 21:40 / 01.07.2025</p>
+            <h4>${item.title.slice(0, 80)}</h4>
+        </div>
+       `;
+    });
     console.log(data.articles);
 };
 request();
