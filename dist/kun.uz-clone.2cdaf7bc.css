@@ -483,6 +483,24 @@ div div {
 }
 
 #simleCard img {
-  width: 200px;
+  text-align: start;
+  width: 220px;
+  height: 130px;
+}
+
+#simleCard h3 {
+  color: #000;
+}
+
+.cardDiv {
+  background-color: #26304d;
+  justify-content: start;
+  align-items: center;
+  width: 500px;
+  display: flex;
+}
+
+.cardDiv h3 {
+  color: #fff;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

@@ -407,5 +407,20 @@ div div{
     margin-top: 20px;
 }
 #simleCard img{
-    width: 200px;
+    width: 220px;
+    height: 130px;
+    text-align: start;
+}
+#simleCard h3{
+    color: black;
+}
+.cardDiv{
+    width: 500px;
+    background-color: #26304d;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.cardDiv h3{
+    color: white;
 }
