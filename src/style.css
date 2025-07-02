@@ -420,7 +420,15 @@ div div{
     display: flex;
     justify-content: start;
     align-items: center;
+    padding-right: 5px;
+    transition: all 0.4s;
+    margin: 5px;
 }
 .cardDiv h3{
     color: white;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+.cardDiv:hover{
+    background-color: #316bdd;
 }

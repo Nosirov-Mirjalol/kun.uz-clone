@@ -85,7 +85,7 @@ const request=async ()=>{
         </div>
         `
     })
-    await data.articles.slice(14,16).forEach(item=>{
+    await data.articles.slice(11,13).forEach(item=>{
     div7.innerHTML +=`
         <div class="div71">
             <img src=${item.urlToImage} alt="medium" />
@@ -103,7 +103,7 @@ const request=async ()=>{
         </div>
         `
     })
-    await data.articles.slice(7,15).forEach(item=>{
+    await data.articles.slice(5,13).forEach(item=>{
         section2.innerHTML +=`
             <div class="ziga">
             <img src=${item.urlToImage || "https://storage.kun.uz/source/thumbnails/_medium/11/U-Am9UIq-hbx2J3GUH-O1PJsb_Jwwn0a_medium.jpg"} alt="medium" />
@@ -131,7 +131,7 @@ const request=async ()=>{
         </div>
         `
     })
-    await data.articles.slice(11,15).forEach(item=>{
+    await data.articles.slice(9,13).forEach(item=>{
         intervyu.innerHTML +=`
           <div>
             <img src=${item.urlToImage} alt='img' />
@@ -145,7 +145,7 @@ const request=async ()=>{
         card.innerHTML +=`
           <div class='cardDiv'>
             <img src=${item.urlToImage} alt="img" />
-            <h3>${item.title.slice(0,60)}</h3>
+            <h3 style="color: white;">${item.title.slice(0,60)}</h3>
           </div>
         `
     })

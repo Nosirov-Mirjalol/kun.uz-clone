@@ -497,10 +497,19 @@ div div {
   justify-content: start;
   align-items: center;
   width: 500px;
+  margin: 5px;
+  padding-right: 5px;
+  transition: all .4s;
   display: flex;
 }
 
 .cardDiv h3 {
   color: #fff;
+  padding-bottom: 20px;
+  padding-left: 10px;
+}
+
+.cardDiv:hover {
+  background-color: #316bdd;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */
