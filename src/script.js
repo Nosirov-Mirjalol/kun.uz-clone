@@ -14,6 +14,7 @@ const div7=document.getElementById('div7')
 const item1=document.getElementById('item1')
 const item2=document.getElementById('item2')
 const item3=document.getElementById('item3')
+const section=document.getElementById('yangilik')
 const content=document.getElementById('content')
 const times=document.getElementById('times')
 
@@ -88,6 +89,15 @@ const request=async ()=>{
             <h4>${item.title.slice(0,80)}</h4>
         </div>
        `
+    })
+    await data.articles.slice(4,12).forEach(item=>{
+        section.innerHTML +=`
+            <div class="ziga">
+            <img src=${item.urlToImage} alt="medium" />
+            <h3>${item.title}</h3>
+            <p>O‘zbekiston | 21:23 / 19.09.2024</p>
+        </div>
+        `
     })
     console.log(data.articles);
     

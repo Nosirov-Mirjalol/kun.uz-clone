@@ -290,3 +290,25 @@ gap: 5px;
 }
 .div71:hover h4{color: #00349c;}
 .div61:hover h4{color: #00349c;}
+.ziga:hover h3{color: #00349c;}
+
+.ziga{
+    width: 300px;
+    background-color: #d5dbd6;
+    border-radius: 6px;
+}
+.ziga img{
+    width: 100%;
+    border-radius: 5px;
+}
+.ziga h3{
+    padding: 3px 10px;
+}
+.ziga p{
+    color: gray;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 3px 10px;
+    padding-bottom: 15px;
+}
+#

@@ -349,7 +349,29 @@ div {
   width: 100%;
 }
 
-.div71:hover h4, .div61:hover h4 {
+.div71:hover h4, .div61:hover h4, .ziga:hover h3 {
   color: #00349c;
+}
+
+.ziga {
+  background-color: #d5dbd6;
+  border-radius: 6px;
+  width: 300px;
+}
+
+.ziga img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.ziga h3 {
+  padding: 3px 10px;
+}
+
+.ziga p {
+  color: gray;
+  padding: 3px 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */
