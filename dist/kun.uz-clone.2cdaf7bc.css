@@ -5,8 +5,12 @@
   --lightbtn: #f8f8f8;
 }
 
+h3 {
+  transition: all .3s;
+}
+
 body {
-  background: linear-gradient(#d9d9d9 10%, #fff 90%) no-repeat;
+  background: linear-gradient(#d9d9d9 5%, #fff 40% 60%) no-repeat;
   font-family: Arial, sans-serif;
 }
 
@@ -362,6 +366,7 @@ div {
 .ziga img {
   border-radius: 5px;
   width: 100%;
+  height: 200px;
 }
 
 .ziga h3 {
@@ -373,5 +378,57 @@ div {
   padding: 3px 10px 15px;
   font-size: 14px;
   font-weight: 600;
+}
+
+#yangilik, #yangilik2 {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 7px;
+  display: flex;
+}
+
+#bignew {
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
+  width: 800px;
+  margin-top: 20px;
+  display: flex;
+}
+
+#bignew img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+#news {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+#news div {
+  width: 400px;
+}
+
+#news img {
+  object-fit: cover;
+  width: 200px;
+  height: 120px;
+}
+
+#news p {
+  color: gray;
+}
+
+#news div:hover h3 {
+  color: #00349c;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

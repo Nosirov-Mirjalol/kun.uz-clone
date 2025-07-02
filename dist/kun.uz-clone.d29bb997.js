@@ -683,8 +683,11 @@ const item1 = document.getElementById('item1');
 const item2 = document.getElementById('item2');
 const item3 = document.getElementById('item3');
 const section = document.getElementById('yangilik');
+const section2 = document.getElementById('yangilik2');
 const content = document.getElementById('content');
 const times = document.getElementById('times');
+const israil = document.getElementById('bignew');
+const news = document.getElementById('news');
 const items = [
     item1,
     item2,
@@ -746,7 +749,6 @@ const request = async ()=>{
     await data.articles.slice(10, 13).forEach((item)=>{
         div6.innerHTML += `
         <div class="div61">
-            <img src=${item.urlToImage}/>
             <p>17:56 / 21.09.2024</p>
             <h4>${item.title.slice(0, 100)}</h4>
         </div>
@@ -764,9 +766,37 @@ const request = async ()=>{
     await data.articles.slice(4, 12).forEach((item)=>{
         section.innerHTML += `
             <div class="ziga">
-            <img src=${item.urlToImage} alt="medium" />
+            <img src=${item.urlToImage || "https://storage.kun.uz/source/thumbnails/_medium/11/U-Am9UIq-hbx2J3GUH-O1PJsb_Jwwn0a_medium.jpg"} alt="medium" />
             <h3>${item.title}</h3>
             <p>O\u{2018}zbekiston | 21:23 / 19.09.2024</p>
+        </div>
+        `;
+    });
+    await data.articles.slice(7, 15).forEach((item)=>{
+        section2.innerHTML += `
+            <div class="ziga">
+            <img src=${item.urlToImage || "https://storage.kun.uz/source/thumbnails/_medium/11/U-Am9UIq-hbx2J3GUH-O1PJsb_Jwwn0a_medium.jpg"} alt="medium" />
+            <h3>${item.title}</h3>
+            <p>O\u{2018}zbekiston | 21:23 / 19.09.2024</p>
+        </div>
+        `;
+    });
+    await data.articles.slice(3, 4).forEach((item)=>{
+        israil.innerHTML = `
+            <img src=${item.urlToImage} />
+            <div>
+              <h2>${item.title.slice(0, 40)}</h2>
+              <p>${item.description}</p>
+            </div>
+        `;
+    });
+    await data.articles.slice(8, 12).forEach((item)=>{
+        news.innerHTML += `
+          <img src=${item.urlToImage} />
+        <div>
+          <p>21:11/28.06.2025</p>
+          <h3>${item.title.slice(0, 60)}</h3>
+          <hr/>
         </div>
         `;
     });
