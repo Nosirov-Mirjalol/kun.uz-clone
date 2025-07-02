@@ -512,4 +512,23 @@ div div {
 .cardDiv:hover {
   background-color: #316bdd;
 }
+
+.parent3 {
+  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  display: grid;
+}
+
+.div10 {
+  grid-area: span 5 / span 2 / span 5 / span 2;
+}
+
+.div11 {
+  grid-area: span 5 / 3 / span 5 / span 3;
+}
+
+.div12 {
+  grid-area: span 5 / 6 / span 5 / span 2;
+}
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

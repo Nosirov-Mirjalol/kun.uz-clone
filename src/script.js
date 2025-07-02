@@ -22,6 +22,9 @@ const times=document.getElementById('times')
 const israil=document.getElementById('bignew')
 const news=document.getElementById('news')
 const intervyu=document.getElementById('intervyu')
+const div10=document.getElementById('div10')
+const div11=document.getElementById('div11')
+const div12=document.getElementById('div12')
 
 const items=[item1,item2,item3]
 
