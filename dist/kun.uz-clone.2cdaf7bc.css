@@ -674,7 +674,10 @@ footer img {
 }
 
 .div:hover {
+  color: #00349c;
+  border: 2px solid #00349c;
   transition: all .3s;
-  transform: translate(-20px);
+  transform: translateY(-10px);
+  box-shadow: 0 5px 8px gray;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */
