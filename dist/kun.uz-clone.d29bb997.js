@@ -690,6 +690,9 @@ const times = document.getElementById('times');
 const israil = document.getElementById('bignew');
 const news = document.getElementById('news');
 const intervyu = document.getElementById('intervyu');
+const div10 = document.getElementById('div10');
+const div11 = document.getElementById('div11');
+const div12 = document.getElementById('div12');
 const items = [
     item1,
     item2,
@@ -817,6 +820,15 @@ const request = async ()=>{
           <div class='cardDiv'>
             <img src=${item.urlToImage} alt="img" />
             <h3 style="color: white;">${item.title.slice(0, 60)}</h3>
+          </div>
+        `;
+    });
+    await data.articles.slice(7, 8).forEach((item)=>{
+        div10.innerHTML = `
+          <div class="divcha">
+          <img src=${item.urlToImage} alt="medium" />
+          <h2>${item.title}</h2>
+          <p>${item.description}</p>
           </div>
         `;
     });

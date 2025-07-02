@@ -152,6 +152,15 @@ const request=async ()=>{
           </div>
         `
     })
+    await data.articles.slice(7,8).forEach(item=>{
+        div10.innerHTML=`
+          <div class="divcha">
+          <img src=${item.urlToImage} alt="medium" />
+          <h2>${item.title}</h2>
+          <p>${item.description}</p>
+          </div>
+        `
+    })
     console.log(data.articles);
 }
 request()

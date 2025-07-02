@@ -17,7 +17,7 @@ body {
 
 .container {
   max-width: 1350px;
-  margin: 0 auto;
+  margin: 10px auto 0;
   padding: 0 15px;
 }
 
@@ -530,5 +530,14 @@ div div {
 
 .div12 {
   grid-area: span 5 / 6 / span 5 / span 2;
+}
+
+.divcha, .divcha img {
+  width: 100%;
+}
+
+.divcha p {
+  color: gray;
+  font-weight: 600;
 }
 /*# sourceMappingURL=kun.uz-clone.2cdaf7bc.css.map */

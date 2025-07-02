@@ -15,6 +15,7 @@ body{
   max-width: 1350px;
   margin: 0 auto;
   padding: 0 15px;
+  margin-top: 10px;
 }
 nav{
     width: 100%;
@@ -456,4 +457,14 @@ div div{
     grid-row: span 5 / span 5;
     grid-column-start: 6;
 }
-        
+.divcha{
+    width: 100%;
+
+}
+.divcha img{
+    width: 100%;
+}
+.divcha p{
+    font-weight: 600;
+    color: gray;
+}
