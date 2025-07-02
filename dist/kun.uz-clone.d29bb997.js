@@ -812,7 +812,7 @@ const request = async ()=>{
           </div>
         `;
     });
-    await data.articles.slice(13, 16).forEach((item)=>{
+    await data.articles.slice(12, 15).forEach((item)=>{
         card.innerHTML += `
           <div>
             <img src=${item.urlToImage} alt='img />

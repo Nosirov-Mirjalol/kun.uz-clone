@@ -200,9 +200,6 @@ grid-row-gap: 0px;
 .div3 img{
     width: 200px;
 }
-div{
-    cursor: pointer;
-}
 .div1 div:hover h3{
     color: #00349c;
 }
@@ -221,6 +218,7 @@ div{
 .div8 div {
   width: 300px;
   padding: 10px;
+  cursor: pointer;
   margin-top: 15px;
   background-color: #e2f1f6;
 }
@@ -378,6 +376,9 @@ gap: 5px;
 #intervyu div{
     width: 320px;
     color: white;
+}
+div div{
+    cursor: pointer;
 }
 .inter img{
     width: 100%;

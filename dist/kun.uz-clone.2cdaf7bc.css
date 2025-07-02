@@ -237,10 +237,6 @@ nav form input {
   width: 200px;
 }
 
-div {
-  cursor: pointer;
-}
-
 .div1 div:hover h3 {
   color: #00349c;
 }
@@ -260,6 +256,7 @@ div {
 }
 
 .div8 div {
+  cursor: pointer;
   background-color: #e2f1f6;
   width: 300px;
   margin-top: 15px;
@@ -453,6 +450,10 @@ div {
 #intervyu div {
   color: #fff;
   width: 320px;
+}
+
+div div {
+  cursor: pointer;
 }
 
 .inter img {
