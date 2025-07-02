@@ -688,6 +688,7 @@ const content = document.getElementById('content');
 const times = document.getElementById('times');
 const israil = document.getElementById('bignew');
 const news = document.getElementById('news');
+const intervyu = document.getElementById('intervyu');
 const items = [
     item1,
     item2,
@@ -798,6 +799,11 @@ const request = async ()=>{
           <h3>${item.title.slice(0, 60)}</h3>
           <hr/>
         </div>
+        `;
+    });
+    await data.articles.slice(11, 14).forEach((item)=>{
+        intervyu.innerHTML += `
+          
         `;
     });
     console.log(data.articles);
