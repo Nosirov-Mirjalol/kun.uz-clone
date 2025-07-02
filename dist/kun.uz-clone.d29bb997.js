@@ -803,7 +803,10 @@ const request = async ()=>{
     });
     await data.articles.slice(11, 14).forEach((item)=>{
         intervyu.innerHTML += `
-          
+          <div>
+            <img src=${item.urlToImage} alt='img' />
+            <h3>${item.title.slice(0, 100)}</h3>
+          </div>
         `;
     });
     console.log(data.articles);
