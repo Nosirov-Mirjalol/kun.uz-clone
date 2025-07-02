@@ -178,8 +178,9 @@ const request=async ()=>{
         div12.innerHTML=`
           <div class="devcha">
           <img src=${item.urlToImage} alt="medium" />
+          <p>20:45/2.06.2025</p>
           <h2>${item.title}</h2>
-          <p>${item.description}</p>
+          
           </div>
         `
     })
