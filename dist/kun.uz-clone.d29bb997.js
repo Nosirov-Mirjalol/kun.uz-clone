@@ -801,7 +801,7 @@ const request = async ()=>{
         </div>
         `;
     });
-    await data.articles.slice(11, 14).forEach((item)=>{
+    await data.articles.slice(11, 15).forEach((item)=>{
         intervyu.innerHTML += `
           <div>
             <img src=${item.urlToImage} alt='img' />
