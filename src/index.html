@@ -12,7 +12,7 @@
     />
     <title>O'zbekiston yangiliklari</title>
 </head>
-<body>
+<body id="body">
     <header class="container">
       <div class="header">
         <img style="cursor: pointer;" class="image" src="../assets/rasm.webp" alt="logo"/>
@@ -46,9 +46,42 @@
             </form>
             <img id="searchIcon" src="../assets/search-893.png" alt="icon" />
           </button>
-          <i class="ri-bar-chart-horizontal-line i"></i>
+          <i id="barIcon" class="ri-bar-chart-horizontal-line i"></i>
+          <span id="barTimes" class="hidden time">&times;</span>
         </div>
       </nav>
+      <div id="barContainer" class="bar container">
+        <ul>
+          <li>-Videolavhalar</li>
+          <li>-Fotolavhalar</li>
+          <li>-Dolzarb xabarlar</li>
+          <li>-Hayotiy hikoyalar</li>
+        </ul>
+        <ul>
+          <li>-Muharrir tanlovi</li>
+          <li>-Maqolalar</li>
+          <li>-Kun mavzulari</li>
+          <li>-Bizning jamoa</li>
+        </ul>
+        <ul style="margin-top: -65px;">
+          <li>-Reklama Tariflari</li>
+          <li>-Media kit</li>
+        </ul>
+        <img src="../assets/business-light.png" alt="credit">
+        <div class="devv">
+          <h4>Qo'shimcha funksionallar</h4>
+            <div class="theme-switch-wrapper">
+              <p>Tungi ko'rinish</p>
+              <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                  <div class="icon sun-icon">☀️</div>
+                  <div class="icon moon-icon">🌙</div>
+                </div>
+              </label>
+            </div>
+        </div>
+      </div>
       <div class="box">
         <li><a href="">47% abituriyent testdan yiqildi</a></li>
         <li><a href="">Parij olimpiadasi</a></li>
@@ -155,21 +188,21 @@
           <li>Kun.uz jamoasi</li>
         </ul>
         <div class="teg">
-          <i class="ri-telegram-fill"></i>
-          <i class="ri-facebook-circle-fill"></i>
-          <i class="ri-twitter-fill"></i>
-          <i class="ri-instagram-line"></i>
+          <li><i class="ri-telegram-fill"></i></li>
+          <li><i class="ri-facebook-circle-fill"></i></li>
+          <li><i class="ri-twitter-fill"></i></li>
+          <li><i class="ri-instagram-line"></i></li>
         </div>
         <div style="display: flex; justify-content: space-between; gap: 15px;">
           <div class="div">
-          <img id="Iphone" src="../assets/Apple_logo_black.svg" alt="Iphone logo">
+          <i class="ri-apple-fill" style="font-size: 26px;"></i>
           <div>
             <p>Dowload on the</p>
             <h4>App Store</h4>
           </div>
         </div>
         <div class="div">
-          <img src="../assets/play-market.webp" alt="play-market logo">
+          <i class="ri-google-play-fill" style="font-size: 26px"></i>
           <div>
             <p>Get to in</p>
             <h4>Google Play</h4>

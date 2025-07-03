@@ -25,8 +25,13 @@ const intervyu=document.getElementById('intervyu')
 const div10=document.getElementById('div10')
 const div11=document.getElementById('div11')
 const div12=document.getElementById('div12')
+const bar=document.getElementById('barIcon')
+const barContainer=document.getElementById('barContainer')
+const barTimes=document.getElementById('barTimes')
+const body=document.getElementById('body')
 
 const items=[item1,item2,item3]
+
 
 searchIcon.addEventListener('click',()=>{
     form.classList.remove('hidden')
@@ -41,6 +46,14 @@ items.forEach(item=>item.addEventListener('click',()=>{
     dropdownbtn.textContent=item.textContent
     content.style.display='none'
 }))
+bar.addEventListener('click',()=>{
+    barContainer.style.display='flex'
+    barTimes.classList.remove('hidden')
+})
+barTimes.addEventListener('click',()=>{
+    barContainer.style.display='none'
+    barTimes.classList.add('hidden')
+})
 const request=async ()=>{
     const response=await fetch(BASE_url,{
         headers:{'X-Api-Key':API_key}
@@ -187,3 +200,28 @@ const request=async ()=>{
     console.log(data.articles);
 }
 request()
+document.addEventListener('DOMContentLoaded', () => {
+    const themeToggle = document.getElementById('checkbox');
+    const body = document.body;
+
+    // Sahifa yuklanganda oxirgi tanlangan rejimni tekshirish
+    if (localStorage.getItem('theme') === 'dark') {
+        body.classList.add('dark-mode');
+        themeToggle.checked = true; // Checkbox yoqilgan holatda bo'ladi
+    }
+
+    themeToggle.addEventListener('change', () => {
+        if (themeToggle.checked) {
+            // Checkbox yoqilgan (ON) holatda
+            console.log("Tugma YOQILGAN. Qiymati (checked):", themeToggle.checked);
+            console.log("Agar HTMLda value berilgan bo'lsa, input.value:", themeToggle.value);
+            body.classList.add('dark-mode');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            console.log("Tugma O'CHIRILGAN. Qiymati (checked):", themeToggle.checked);
+            console.log("Agar HTMLda value berilgan bo'lsa, input.value:", themeToggle.value);
+            body.classList.remove('dark-mode');
+            localStorage.setItem('theme', 'light');
+        }
+    });
+});

@@ -27,6 +27,8 @@ nav{
     border-radius: 8px;
     margin-bottom: 7px;
     position: relative;
+    z-index: 60;
+    box-shadow: 0px 3px 8px rgb(203, 203, 203);
 }
 nav ul a:hover{
     color: #00349c;
@@ -571,11 +573,186 @@ footer img {
 .teg i{
     font-size: 24px;
 }
-.tag i:hover{color: #00349c;}
+.teg{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.teg li{
+    list-style: none;
+}
+.teg li:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s;
+    color: #00349c;
+}
 .div:hover{
     transition: all 0.3s;
     transform: translateY(-10px);
-    box-shadow: 0px 5px 8px gray;
+    box-shadow: 0px 5px 8px rgb(175, 175, 175);
     border: 2px solid #00349c;
     color: #00349c;
+}
+.bar{
+    width: 97.1%;
+    background-color: var(--light);
+    height: 300px;
+    position: absolute;
+    bottom: -260px;
+    z-index: 50;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    border-radius: 7px;
+}
+.bar ul{
+    padding: 20px 10px;
+    list-style: none;
+}
+.time{
+    position: absolute;
+    padding: 0px 3px;
+    background-color:white;
+    font-size: 30px;
+    cursor: pointer;
+    right: 10px;
+}
+#barIcon{
+    cursor: pointer;
+    padding: 2px 4px;
+}
+.bar li{
+    font-size: 24px;
+    font-weight: bold;
+    padding: 7px 0px;
+    color: #00349c;
+}
+.bar li:hover{
+    color: #316bdd;
+    transition: all 0.3s;
+}
+.bar .devv{
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    position: relative;
+}
+/* theme */
+
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px; /* Tugmaning kengligi */
+    height: 30px; /* Tugmaning balandligi */
+}
+
+/* Checkboxni yashirish */
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 2px;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px; /* Dumaloq burchaklar */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px; /* Ikonalarni chekkadan uzoqroq qilish */
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 22px; /* Dastlabki aylananing balandligi */
+    width: 22px; /* Dastlabki aylananing kengligi */
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%; /* Dumaloq shakl */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Tugma yoqilganda slider rangi */
+input:checked + .slider {
+    background-color: #2196F3; /* Moviy rang, yoki rasmga mos keladigan boshqa rang */
+}
+
+/* Tugma yoqilganda aylana holati */
+input:checked + .slider:before {
+    -webkit-transform: translateX(30px); /* O'ngga siljitish */
+    -ms-transform: translateX(30px);
+    transform: translateX(30px);
+}
+
+/* Ikonkalar */
+.icon {
+    font-size: 14px;
+    position: absolute;
+    transition: opacity 0.3s ease;
+    color: white; /* Ikonkalar rangi, agar slider backgroundiga mos kelmasa */
+    display: flex; /* Flexbox yordamida markazlashtirish */
+    align-items: center;
+    justify-content: center;
+    width: 30px; /* Ikonka uchun joy */
+    height: 30px; /* Ikonka uchun joy */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.sun-icon {
+    left: 8px;
+    top: 15px;
+    left: 0px;
+    opacity: 1;
+}
+
+.moon-icon {
+    right: 8px;
+    top: 15px;
+    right: -1px;
+    opacity: 0; /* Dastlabki holatda yashirin */
+}
+
+/* Checkbox yoqilganda ikonka holati */
+input:checked + .slider .sun-icon {
+    opacity: 0; /* Quyosh ikonkasini yashirish */
+}
+
+input:checked + .slider .moon-icon {
+    opacity: 1; /* Oy ikonkasini ko'rsatish */
+}
+.theme{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: space-between;
+}
+.theme p{
+    width: 120px;
+    display: inline-block;
 }
