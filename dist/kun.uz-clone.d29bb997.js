@@ -961,10 +961,8 @@ const dark = ()=>{
     head.classList.add('dark-body');
     vatan.classList.remove('Vatanga');
     vatan.classList.add('vatan');
-    vatan1.classList.add('vatan');
-    vatan1.style.backgroundColor = '#172b33 !important';
-    vatan2.classList.add('vatan');
-    vatan2.style.backgroundColor = '#173125 !important';
+    vatan1.classList.add('vatan1');
+    vatan2.classList.add('vatan2');
     darkModes.forEach((item)=>{
         item.classList.add('dark-mode');
     });

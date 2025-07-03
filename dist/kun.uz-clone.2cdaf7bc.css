@@ -884,7 +884,21 @@ input:checked + .slider .moon-icon {
   background-color: #30271a !important;
 }
 
-.vatan:hover {
+.vatan1 {
+  width: 300px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #172b33 !important;
+}
+
+.vatan2 {
+  width: 300px;
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #173125 !important;
+}
+
+.vatan:hover, .vatan1:hover, .vatan2:hover {
   transform: translateZ(7px);
   box-shadow: none !important;
 }
