@@ -216,12 +216,9 @@ document.addEventListener('DOMContentLoaded', () => {
             console.log("Tugma YOQILGAN. Qiymati (checked):", themeToggle.checked);
             console.log("Agar HTMLda value berilgan bo'lsa, input.value:", themeToggle.value);
             body.classList.add('dark-mode');
-            localStorage.setItem('theme', 'dark');
+            bar.classList.add('dark-mode')
         } else {
-            console.log("Tugma O'CHIRILGAN. Qiymati (checked):", themeToggle.checked);
-            console.log("Agar HTMLda value berilgan bo'lsa, input.value:", themeToggle.value);
             body.classList.remove('dark-mode');
-            localStorage.setItem('theme', 'light');
         }
     });
 });

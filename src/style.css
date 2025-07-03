@@ -4,6 +4,11 @@
     --darkCard:#1c293d;
     --lightbtn:#f8f8f8;
 }
+.dark-mode{
+    background-color: #1a1b1d !important;
+    background: linear-gradient(to bottom,#1a1b1d,#1a1b1d);
+    color: rgb(204, 204, 204) !important;
+}
 h3{transition: all 0.3s;}
 body{
     margin: 0;

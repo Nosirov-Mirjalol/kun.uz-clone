@@ -5,6 +5,12 @@
   --lightbtn: #f8f8f8;
 }
 
+.dark-mode {
+  background: linear-gradient(#1a1b1d, #1a1b1d);
+  color: #ccc !important;
+  background-color: #1a1b1d !important;
+}
+
 h3 {
   transition: all .3s;
 }
