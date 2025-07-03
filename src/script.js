@@ -1,5 +1,6 @@
-import { BASE_url,API_key } from "./API";
-
+import { BASE_url,API_key} from "./API";
+import {dark} from './dark'
+ 
 const form=document.getElementById('form')
 const searchInp=document.getElementById('searchInp')
 const searchIcon=document.getElementById('searchIcon')
@@ -28,7 +29,6 @@ const div12=document.getElementById('div12')
 const bar=document.getElementById('barIcon')
 const barContainer=document.getElementById('barContainer')
 const barTimes=document.getElementById('barTimes')
-const body=document.getElementById('body')
 
 const items=[item1,item2,item3]
 
@@ -200,6 +200,7 @@ const request=async ()=>{
     console.log(data.articles);
 }
 request()
+
 document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('checkbox');
     const body = document.body;
@@ -212,13 +213,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     themeToggle.addEventListener('change', () => {
         if (themeToggle.checked) {
-            // Checkbox yoqilgan (ON) holatda
-            console.log("Tugma YOQILGAN. Qiymati (checked):", themeToggle.checked);
-            console.log("Agar HTMLda value berilgan bo'lsa, input.value:", themeToggle.value);
-            body.classList.add('dark-mode');
-            bar.classList.add('dark-mode')
+            dark()
         } else {
-            body.classList.remove('dark-mode');
+            
         }
     });
 });

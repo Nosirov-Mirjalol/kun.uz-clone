@@ -668,6 +668,7 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"kyksZ":[function(require,module,exports,__globalThis) {
 var _api = require("./API");
+var _dark = require("./dark");
 const form = document.getElementById('form');
 const searchInp = document.getElementById('searchInp');
 const searchIcon = document.getElementById('searchIcon');
@@ -696,7 +697,6 @@ const div12 = document.getElementById('div12');
 const bar = document.getElementById('barIcon');
 const barContainer = document.getElementById('barContainer');
 const barTimes = document.getElementById('barTimes');
-const body = document.getElementById('body');
 const items = [
     item1,
     item2,
@@ -879,17 +879,11 @@ document.addEventListener('DOMContentLoaded', ()=>{
         themeToggle.checked = true; // Checkbox yoqilgan holatda bo'ladi
     }
     themeToggle.addEventListener('change', ()=>{
-        if (themeToggle.checked) {
-            // Checkbox yoqilgan (ON) holatda
-            console.log("Tugma YOQILGAN. Qiymati (checked):", themeToggle.checked);
-            console.log("Agar HTMLda value berilgan bo'lsa, input.value:", themeToggle.value);
-            body.classList.add('dark-mode');
-            bar.classList.add('dark-mode');
-        } else body.classList.remove('dark-mode');
+        if (themeToggle.checked) (0, _dark.dark)();
     });
 });
 
-},{"./API":"bvGHb"}],"bvGHb":[function(require,module,exports,__globalThis) {
+},{"./API":"bvGHb","./dark":"m9hxK"}],"bvGHb":[function(require,module,exports,__globalThis) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "API_key", ()=>API_key);
@@ -927,6 +921,59 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}]},["7SvX3","kyksZ"], "kyksZ", "parcelRequire3092", {})
+},{}],"m9hxK":[function(require,module,exports,__globalThis) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "dark", ()=>dark);
+const body = document.getElementById('body');
+const head = document.getElementById('head');
+const creditimg = document.getElementById('credit');
+const dropdownbtn = document.getElementById('dropdown');
+const dropdownDiv = document.getElementById('dropdownDiv');
+const content = document.getElementById('content');
+const barContainer = document.getElementById('barContainer');
+const nav = document.getElementById('nav');
+const searchbtn = document.getElementById('searchbtn');
+const form = document.getElementById('form');
+const searchIcon = document.getElementById('searchIcon');
+const searchInp = document.getElementById('searchInp');
+const barTimes = document.getElementById('barTimes');
+const vatan = document.getElementById('vatan');
+const vatan1 = document.getElementById('vatan1');
+const vatan2 = document.getElementById('vatan2');
+const darkModes = [
+    barContainer,
+    nav
+];
+const darkbtn = [
+    dropdownDiv,
+    dropdownbtn,
+    content,
+    searchbtn,
+    searchIcon,
+    form,
+    searchInp,
+    barTimes
+];
+const dark = ()=>{
+    body.classList.add('dark-body');
+    creditimg.src = 'https://kun.uz/assets/66844a27/img/business-bg-dark.png';
+    head.classList.add('dark-body');
+    vatan.classList.remove('Vatanga');
+    vatan.classList.add('vatan');
+    vatan1.classList.add('vatan');
+    vatan1.style.backgroundColor = '#172b33 !important';
+    vatan2.classList.add('vatan');
+    vatan2.style.backgroundColor = '#173125 !important';
+    darkModes.forEach((item)=>{
+        item.classList.add('dark-mode');
+    });
+    darkbtn.forEach((item)=>{
+        item.style.backgroundColor = '#1e242d';
+        item.style.boxShadow = 'none';
+    });
+};
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"jnFvT"}]},["7SvX3","kyksZ"], "kyksZ", "parcelRequire3092", {})
 
 //# sourceMappingURL=kun.uz-clone.d29bb997.js.map
